@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B819C4E9-369C-4113-BDE3-A9CCA50210DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>gtscoliar</RootNamespace>
+    <AssemblyName>gtscoliar</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Map.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v21.1.DataModel, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v21.1.DataModel.EF6, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v21.1.ViewModel, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.Base.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.1.Export, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.1.UI, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v21.1.Extensions, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\..\..\source\repos\materileske\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\shared.cs" />
+    <Compile Include="Common\CollectionViewModel.cs" />
+    <Compile Include="Common\EntitiesViewModel.cs" />
+    <Compile Include="Common\ReadOnlyCollectionViewModel.cs" />
+    <Compile Include="Common\SingleObjectViewModel.cs" />
+    <Compile Include="Database\anne_scoliar.cs" />
+    <Compile Include="Database\evaluer.cs" />
+    <Compile Include="Database\gtstg.cs" />
+    <Compile Include="Database\mode_de_formation.cs" />
+    <Compile Include="Database\module.cs" />
+    <Compile Include="Database\option.cs" />
+    <Compile Include="Database\promo.cs" />
+    <Compile Include="Database\section.cs" />
+    <Compile Include="Database\semasetre.cs" />
+    <Compile Include="Database\Specialité.cs" />
+    <Compile Include="Database\stg.cs" />
+    <Compile Include="Database\sysdiagram.cs" />
+    <Compile Include="datasettype\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formes\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formes\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formes\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formes\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formes\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formes\Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formes\gtnote\frmaddnote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formes\gtnote\frmaddnote.Designer.cs">
+      <DependentUpon>frmaddnote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formes\GTSTG\FRMGTSTG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formes\GTSTG\FRMGTSTG.Designer.cs">
+      <DependentUpon>FRMGTSTG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formes\MyReport .cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="formes\splashsakiren\splashsacrine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formes\splashsakiren\splashsacrine.Designer.cs">
+      <DependentUpon>splashsacrine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gtmgDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gtmgDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gtstgDataModel\gtstgUnitOfWork.cs" />
+    <Compile Include="gtstgDataModel\IgtstgUnitOfWork.cs" />
+    <Compile Include="gtstgDataModel\UnitOfWorkSource.cs" />
+    <Compile Include="mabase\anne_scoliar.cs" />
+    <Compile Include="mabase\evaluer.cs" />
+    <Compile Include="mabase\Model1.cs" />
+    <Compile Include="mabase\mode_de_formation.cs" />
+    <Compile Include="mabase\module.cs" />
+    <Compile Include="mabase\option.cs" />
+    <Compile Include="mabase\promo.cs" />
+    <Compile Include="mabase\section.cs" />
+    <Compile Include="mabase\semasetre.cs" />
+    <Compile Include="mabase\Specialité.cs" />
+    <Compile Include="mabase\stg.cs" />
+    <Compile Include="mabase\sysdiagram.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\anne_scoliar\anne_scoliarCollectionViewModel.cs" />
+    <Compile Include="ViewModels\anne_scoliar\anne_scoliarViewModel.cs" />
+    <Compile Include="ViewModels\evaluer\evaluerCollectionViewModel.cs" />
+    <Compile Include="ViewModels\evaluer\evaluerViewModel.cs" />
+    <Compile Include="ViewModels\gtstgViewModel.cs" />
+    <Compile Include="ViewModels\mode_de_formation\mode_de_formationCollectionViewModel.cs" />
+    <Compile Include="ViewModels\mode_de_formation\mode_de_formationViewModel.cs" />
+    <Compile Include="ViewModels\module\moduleCollectionViewModel.cs" />
+    <Compile Include="ViewModels\module\moduleViewModel.cs" />
+    <Compile Include="ViewModels\option\optionCollectionViewModel.cs" />
+    <Compile Include="ViewModels\option\optionViewModel.cs" />
+    <Compile Include="ViewModels\promo\promoCollectionViewModel.cs" />
+    <Compile Include="ViewModels\promo\promoViewModel.cs" />
+    <Compile Include="ViewModels\section\sectionCollectionViewModel.cs" />
+    <Compile Include="ViewModels\section\sectionViewModel.cs" />
+    <Compile Include="ViewModels\semasetre\semasetreCollectionViewModel.cs" />
+    <Compile Include="ViewModels\semasetre\semasetreViewModel.cs" />
+    <Compile Include="ViewModels\Specialité\SpecialitéCollectionViewModel.cs" />
+    <Compile Include="ViewModels\Specialité\SpecialitéViewModel.cs" />
+    <Compile Include="ViewModels\stg\stgCollectionViewModel.cs" />
+    <Compile Include="ViewModels\stg\stgViewModel.cs" />
+    <Compile Include="ViewModels\sysdiagram\sysdiagramCollectionViewModel.cs" />
+    <Compile Include="ViewModels\sysdiagram\sysdiagramViewModel.cs" />
+    <Compile Include="Views\anne_scoliar\anne_scoliarCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\anne_scoliar\anne_scoliarCollectionView.designer.cs">
+      <DependentUpon>anne_scoliarCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\anne_scoliar\anne_scoliarView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\anne_scoliar\anne_scoliarView.designer.cs">
+      <DependentUpon>anne_scoliarView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\evaluer\evaluerCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\evaluer\evaluerCollectionView.designer.cs">
+      <DependentUpon>evaluerCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\evaluer\evaluerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\evaluer\evaluerView.designer.cs">
+      <DependentUpon>evaluerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\gtstgView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\gtstgView.designer.cs">
+      <DependentUpon>gtstgView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\mode_de_formation\mode_de_formationCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\mode_de_formation\mode_de_formationCollectionView.designer.cs">
+      <DependentUpon>mode_de_formationCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\mode_de_formation\mode_de_formationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\mode_de_formation\mode_de_formationView.designer.cs">
+      <DependentUpon>mode_de_formationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\module\moduleCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\module\moduleCollectionView.designer.cs">
+      <DependentUpon>moduleCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\module\moduleView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\module\moduleView.designer.cs">
+      <DependentUpon>moduleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\option\optionCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\option\optionCollectionView.designer.cs">
+      <DependentUpon>optionCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\option\optionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\option\optionView.designer.cs">
+      <DependentUpon>optionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\promo\promoCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\promo\promoCollectionView.designer.cs">
+      <DependentUpon>promoCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\promo\promoView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\promo\promoView.designer.cs">
+      <DependentUpon>promoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\section\sectionCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\section\sectionCollectionView.designer.cs">
+      <DependentUpon>sectionCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\section\sectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\section\sectionView.designer.cs">
+      <DependentUpon>sectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\semasetre\semasetreCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\semasetre\semasetreCollectionView.designer.cs">
+      <DependentUpon>semasetreCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\semasetre\semasetreView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\semasetre\semasetreView.designer.cs">
+      <DependentUpon>semasetreView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Specialité\SpecialitéCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Specialité\SpecialitéCollectionView.designer.cs">
+      <DependentUpon>SpecialitéCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Specialité\SpecialitéView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Specialité\SpecialitéView.designer.cs">
+      <DependentUpon>SpecialitéView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\stg\stgCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\stg\stgCollectionView.designer.cs">
+      <DependentUpon>stgCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\stg\stgView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\stg\stgView.designer.cs">
+      <DependentUpon>stgView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sysdiagram\sysdiagramCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\sysdiagram\sysdiagramCollectionView.designer.cs">
+      <DependentUpon>sysdiagramCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sysdiagram\sysdiagramView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\sysdiagram\sysdiagramView.designer.cs">
+      <DependentUpon>sysdiagramView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formes\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formes\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formes\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formes\gtnote\frmaddnote.resx">
+      <DependentUpon>frmaddnote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formes\GTSTG\FRMGTSTG.fr-FR.resx">
+      <DependentUpon>FRMGTSTG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formes\GTSTG\FRMGTSTG.resx">
+      <DependentUpon>FRMGTSTG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formes\MyReport .resx">
+      <DependentUpon>MyReport .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formes\splashsakiren\splashsacrine.resx">
+      <DependentUpon>splashsacrine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\gtstgView.resx">
+      <DependentUpon>gtstgView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\option\optionCollectionView.resx">
+      <DependentUpon>optionCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\option\optionView.resx">
+      <DependentUpon>optionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\promo\promoView.resx">
+      <DependentUpon>promoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\section\sectionView.resx">
+      <DependentUpon>sectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\stg\stgCollectionView.resx">
+      <DependentUpon>stgCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="datasettype\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="datasettype\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="datasettype\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="gtmgDataSet.xsc">
+      <DependentUpon>gtmgDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gtmgDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gtmgDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gtmgDataSet.xss">
+      <DependentUpon>gtmgDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
