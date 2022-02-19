@@ -94,9 +94,10 @@ namespace gtscoliar.formes
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(66, 99);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "sepsilite";
+            this.label2.Text = "Spécilaité ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // comboBox2
             // 
