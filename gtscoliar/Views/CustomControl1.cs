@@ -8,16 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace gtscoliar.formes
+namespace gtscoliar.Views
 {
-    public partial class Form3 : Form
+    public partial class CustomControl1 : Control
     {
-        public Form3()
+        public CustomControl1()
         {
             InitializeComponent();
         }
 
-        private void gtstgView1_Load(object sender, EventArgs e)
+        protected override void OnPaint(PaintEventArgs pe)
+        {
+            base.OnPaint(pe);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

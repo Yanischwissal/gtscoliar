@@ -242,6 +242,12 @@
     <Compile Include="Views\anne_scoliar\anne_scoliarView.designer.cs">
       <DependentUpon>anne_scoliarView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\CustomControl1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\CustomControl1.Designer.cs">
+      <DependentUpon>CustomControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\evaluer\evaluerCollectionView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -405,6 +411,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\CustomControl1.resx">
+      <DependentUpon>CustomControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\gtstgView.resx">
       <DependentUpon>gtstgView.cs</DependentUpon>
     </EmbeddedResource>

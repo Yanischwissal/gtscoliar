@@ -29,6 +29,7 @@ namespace gtscoliar.formes
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -50,6 +51,8 @@ namespace gtscoliar.formes
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.button11 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
+            this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -62,6 +65,8 @@ namespace gtscoliar.formes
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -272,6 +277,14 @@ namespace gtscoliar.formes
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // documentManager1
+            // 
+            this.documentManager1.ContainerControl = this;
+            this.documentManager1.MenuManager = this.ribbonControl1;
+            this.documentManager1.View = this.tabbedView1;
+            this.documentManager1.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
+            this.tabbedView1});
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,6 +307,8 @@ namespace gtscoliar.formes
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,5 +337,7 @@ namespace gtscoliar.formes
         private System.Windows.Forms.Button button2;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
+        private DevExpress.XtraBars.Docking2010.DocumentManager documentManager1;
+        private DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView tabbedView1;
     }
 }

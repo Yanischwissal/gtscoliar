@@ -39,6 +39,7 @@ namespace gtscoliar.formes
             this.gtstgView1.Name = "gtstgView1";
             this.gtstgView1.Size = new System.Drawing.Size(800, 450);
             this.gtstgView1.TabIndex = 0;
+            this.gtstgView1.Load += new System.EventHandler(this.gtstgView1_Load);
             // 
             // Form3
             // 

@@ -64,7 +64,7 @@ namespace gtscoliar.formes
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(124, 97);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(168, 21);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
             this.comboBox1.SelectionChangeCommitted += new System.EventHandler(this.comboBox1_SelectionChangeCommitted);
@@ -104,7 +104,7 @@ namespace gtscoliar.formes
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(124, 124);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.Size = new System.Drawing.Size(157, 21);
             this.comboBox2.TabIndex = 2;
             this.comboBox2.SelectionChangeCommitted += new System.EventHandler(this.comboBox2_SelectionChangeCommitted);
             // 
@@ -123,7 +123,7 @@ namespace gtscoliar.formes
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(124, 167);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.Size = new System.Drawing.Size(157, 21);
             this.comboBox3.TabIndex = 4;
             // 
             // optionsTableAdapter
@@ -164,9 +164,9 @@ namespace gtscoliar.formes
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(124, 209);
+            this.comboBox4.Location = new System.Drawing.Point(105, 209);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
+            this.comboBox4.Size = new System.Drawing.Size(140, 21);
             this.comboBox4.TabIndex = 7;
             // 
             // comboBox5
