@@ -116,6 +116,7 @@ namespace gtscoliar.formes
             this.label3.Size = new System.Drawing.Size(36, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "promo";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // comboBox3
             // 
@@ -182,9 +183,9 @@ namespace gtscoliar.formes
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(48, 212);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 13);
+            this.label4.Size = new System.Drawing.Size(51, 13);
             this.label4.TabIndex = 12;
-            this.label4.Text = "semmastre";
+            this.label4.Text = "Semestre";
             // 
             // label5
             // 
